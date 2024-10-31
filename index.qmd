@@ -1,0 +1,49 @@
+---
+comments: false
+---
+
+## Preface {.unnumbered}
+
+::: callout-caution
+## Guide being written
+
+This guide is still incomplete. The complete repository (documentation, data, script, etc.) will be available shortly at this link: <https://github.com/maslard.corentin/phd_soybean_2021_2024>.
+
+In the meantime, we advise you to complete your reading by visiting [The thesis manuscript](https://1drv.ms/b/s!Aq9vs33-G0z9wfsFkiGfdJDcvK2Ouw?e=uW3vYb-R).
+:::
+
+This is a Quarto book which resume my work during my PhD.
+
+**Here are the articles resulting from this research:**
+
+-   @maslard_root_2021
+-   @maslard2024
+
+**More informations about my work :**
+
+:::{.columns}
+::: {.column width="50%"}
+
+- [<img src="src/icons8-plante-en-croissance-windows-11-color-96.ico" style="width: 20px; vertical-align: middle;"> Personal website](https://cmaslard.xyz)
+- [{{< iconify fa6-solid:envelope >}} Email](mailto:maslard.corentin@gmail.com)
+- [{{< iconify fa6-brands github >}} Github](https://github.com/cmaslard)
+- [{{< iconify fa6-brands linkedin >}} Linkedin](https://www.linkedin.com/in/corentin-maslard)
+- [{{< iconify fa6-brands square-x-twitter >}} X (Twitter)](https://x.com/cmaslard)
+
+:::
+::: {.column width="50%"}
+
+- [{{< iconify fa6-brands:orcid >}} ORCID](https://orcid.org/0000-0002-6951-1963)
+- [{{< iconify fa6-brands:researchgate >}} ResearchGate](https://www.researchgate.net/profile/Corentin-Maslard)
+- [{{< iconify academicons:google-scholar >}} Google Scholar](https://scholar.google.com/citations?user=TsztyiMAAAAJ&hl)
+- [{{< iconify academicons:hal >}} HAL](https://cv.hal.science/corentinmaslard)
+- [{{< iconify pepicons-pop:cv >}} CV](https://docs.google.com/document/d/1oCgrdjnAJuVjgocx3F2kmlbJxlqa6uWrSgqm5fWRhpA/edit?usp=sharing)
+
+:::
+:::
+
+## Licence {.unnumbered}
+
+This document is made available under the terms of the [Licence Creative Commons Attribution - Non Commercial Use - Share Alike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+![](src/by-nc-sa.png){width="160"}

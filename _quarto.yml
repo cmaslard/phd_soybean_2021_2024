@@ -1,0 +1,162 @@
+project:
+  type: book
+  output-dir: docs
+lang: en
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: right
+  loop: false
+
+book:
+  title: "PhD soybean 2021-2024"
+  subtitle: "Opening the black box of soybean-microbial community interaction under heat and water stresses"
+  cover-image: src/root_Simple_Segmentation.png
+  favicon: src/root.png
+  back-to-top-navigation: true
+  author:
+    - name: Corentin Maslard
+      degrees: PhD
+      email: maslard.corentin@gmail.com
+      orcid: 0000-0002-6951-1963
+      url: https://cmaslard.xyz
+      affiliations: INRAE, Roullier Group
+      attributes:
+        corresponding: true
+  date: today
+  date-format: long
+  abstract: Seed legumes are cultivated for their protein-rich seeds, which can be consumed by humans or animals. They do not need nitrogen fertilizers because they can fix atmospheric nitrogen in symbiosis with soil bacteria (rhizobium) in newly-formed root organs called nodules. Legumes play an essential role in the development of more sustainable agriculture and can help mitigate future climate change. However, legumes' sensitivity to environmental stresses, particularly heat and drought, makes their yields unstable in terms of seed quantity and protein content, hindering their development in cropping systems. With climate change leading to more intense and prolonged periods of heat stress, it is crucial to enhance legumes' ability to sustain growth and ensure high productivity levels. This PhD project aims to enhance our understanding of the relationship between legume nodulated root systems and associated soil and plant micro-organisms. The ultimate goal is to develop new strategies that can improve nutrient uptake by legumes, especially during periods of heat stress.
+  chapters:
+    - index.qmd
+    - part: "**Introduction to the thesis**"
+      chapters: 
+        - report/intro/intro.qmd
+        - report/intro/1_experimental_design_climat.qmd
+    - part: "**🌱 Ecophysiology**"
+      chapters: 
+        - report/water/2_water_during_the_experiment.qmd
+        - report/physio/2_RUE.qmd
+        - report/physio/0_preprocessing_ecophy.qmd
+        - report/physio/2_rapid_analysis_ecophy.qmd
+    - part: "**🫚 Root architecture**"
+      id: root_architecture
+      chapters:
+        - report/root_architecture/0_preprocessing_root_architecture.qmd
+        - report/root_architecture/2_rapid_analysis_root_architecture.qmd
+        - report/root_architecture/2_root_architecturedepending_depth.qmd
+    - part: "**⚛️ Ionomics**"
+      chapters:
+        - report/iono/0A_preprocessing_iono.qmd
+        - report/iono/0B_preprocessing_efficiency.qmd
+        - report/iono/2_rapid_analysis_iono.qmd
+    # - part: "**🦠🍄 Microorganisms**"
+    #   chapters: 
+    #     - report/mcom/0_intro_mcom.qmd
+    #     - report/mcom/1_qiime2.qmd
+    #     - report/mcom/2_data_importation_amplicon.qmd
+    #     - report/mcom/3_diversity_rarefaction.qmd
+    #     - report/mcom/4_sourcetracker.qmd
+    #     - report/mcom/5_taxonomy.qmd
+    #     - report/mcom/6_metacoder.qmd
+    #     - report/mcom/7_volcanoplot.qmd
+    #     - report/mcom/8_upsetplot.qmd
+    # - part: "**️📈📉Metabolomic**"
+    #   chapters: 
+    #     - report/metabolomic/0_targeted_metabo_import_clean.qmd
+    #     - report/metabolomic/1_targeted_metabo_analyse.qmd
+    #     - report/metabolomic/0_untargeted_metabo_import_clean.qmd
+    #     - report/metabolomic/1_untargeted_metabo_deregulated.qmd
+    #     - report/metabolomic/2_untargeted_metabo_GO.qmd
+    #     - report/metabolomic/1_untargeted_metabo_WGCNA.qmd
+    # - part: "**🧬RNAseq**"
+    #   chapters: 
+    #     - report/rnaseq/0_intro_rnaseq.qmd
+    #     - report/rnaseq/1_rnaseq_dseq2.qmd
+    #     - report/rnaseq/2A_rnaseq_upsetplot.qmd
+    #     - report/rnaseq/2B_rnaseq_profile_one_gene.qmd
+    #     - report/rnaseq/2C_rnaseq_WGCNA.qmd
+    - part: "**📊 Multi-Omics Integration**"
+      chapters:
+        - report/multi_omics/A1_physio_iono_RA.qmd
+    #     - report/multi_omics/B1_multiomic_plant_introduction.qmd
+    #     - report/multi_omics/B1_WGCNA_rnaseq_metabo_iono.qmd
+    #     - report/multi_omics/B1_pathview_rna_metabo.qmd
+    #     - report/multi_omics/B1_mixomics_rnaseq_metabo_iono_physio.qmd
+    #     - report/multi_omics/B1_LMM_plant.qmd
+    #     - report/multi_omics/C1_mixomics_bacteria_exudates_root_architecture.qmd
+    # - part: "**🛠️️ Common functions**"
+    #   chapters: 
+    #     - report/common_function/analysis_function.qmd
+    #     - report/common_function/visualization_function.qmd
+        
+    - references.qmd
+  search:
+    type: overlay
+  repo-url: https://github.com/cmaslard/phd_soybean_2021_2024/
+  repo-actions: [source, issue]
+  downloads: [pdf]
+  sharing: [twitter, facebook, linkedin]
+  output-file: guide-R
+  sidebar: 
+    border: true
+    logo: src/root.png
+    collapse-level: 1
+  page-footer: 
+    border: true
+    background: light
+    left: 
+      - icon: badge-cc-fill
+        url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+      - text: "Corentin Maslard 2024"
+        href: "https://cmaslard.xyz/" 
+      
+    center:
+      - text: "{{< iconify fa6-solid:envelope >}}"
+        href: "mailto:maslard.corentin@gmail.com"
+        aria-label: "envelope logo for email"
+      - text: "{{< iconify fa6-brands:github >}}"
+      - icon: github
+        href: https://github.com/cmaslard/phd_soybean_2021_2024/
+      - text: "{{< iconify fa6-brands:linkedin >}}"
+        href: https://www.linkedin.com/in/corentin-maslard
+      - text: "{{< iconify fa6-brands square-x-twitter >}}"
+        href: https://x.com/cmaslard
+      - text: "{{< iconify fa6-brands:orcid >}}"
+        href: "https://orcid.org/0000-0002-6951-1963"
+        aria-label: "ORCID logo linking to ORCID account"
+      - text: "{{< iconify fa6-brands:researchgate >}}"
+        href: "https://www.researchgate.net/profile/Corentin-Maslard"
+        aria-label: "ResearchGate logo linking to ResearchGate account"
+      - text: "{{< iconify academicons:google-scholar >}}"
+        href: https://scholar.google.com/citations?user=TsztyiMAAAAJ&hl
+        target: blank
+      - text: "{{< iconify academicons:hal >}}"
+        href: https://cv.hal.science/corentinmaslard
+        aria-label: "HAL account"
+      - text: "{{< iconify pepicons-pop:cv >}}"
+        href: "https://docs.google.com/document/d/1oCgrdjnAJuVjgocx3F2kmlbJxlqa6uWrSgqm5fWRhpA/edit?usp=sharing"
+        aria-label: "CV"
+      - text: "Draft Thesis Manuscript "
+        url: https://1drv.ms/b/s!Aq9vs33-G0z9wfsFkiGfdJDcvK2Ouw?e=uW3vYb
+      - text: "R-shiny"
+        url: https://corentin-maslard.shinyapps.io/shiny_XP1_Corentin_Maslard/
+        
+    right:
+        <span class="faux-block">Made with <iconify-icon icon="line-md:heart-twotone"></iconify-icon>, <iconify-icon icon="line-md:coffee-twotone-loop"></iconify-icon>, {{< iconify fa6-brands r-project >}} and [Quarto](https://quarto.org/)</span> |
+        <span class="faux-block">[View the source at {{< iconify fa6-brands github >}} GitHub](https://github.com/cmaslard/cmaslard.github.io)</span>
+      
+
+bibliography: [references.bib,my_articles.bib]
+
+format:
+  html:
+    grid:
+      body-width: 1000px
+    code-fold: true
+    theme: 
+      light: [cosmo, src/theme-light.scss]
+      dark: [cosmo, src/theme-dark.scss]
+    execute:
+      echo: true
+      warning: false
+editor: source
